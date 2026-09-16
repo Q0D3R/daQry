@@ -3,16 +3,16 @@
 
 // Light Theme (Human & Soulful Organic Palette)
 :root {
-    --theme-primary: #1F2E4A;
-    --theme-secondary: #343A40;
-    --theme-accent: #1F2E4A; // Darker accent for readability
-    --theme-bg: #F8F9FA;
+    --theme-primary: #0F3435;
+    --theme-secondary: #816F5E;
+    --theme-accent: #0F3435;
+    --theme-bg: #FAFBFF;
     --theme-surface: #ffffff;
-    --theme-text: #1F2E4A;
-    --theme-text-light: #ffffff; // White text on dark primary elements
-    --theme-text-muted: #545B62; // Darker gray for readable muted text (was too light)
-    --theme-border: #CED4DA; // Use the palette's light gray for borders instead
-    --theme-nav-accent: #CED4DA; // Light gray for nav hover/active state on dark header
+    --theme-text: #0F3435;
+    --theme-text-light: #FAFBFF;
+    --theme-text-muted: #816F5E;
+    --theme-border: #C9D6DF;
+    --theme-nav-accent: #C9D6DF;
 
     --theme-logo1: #F44336;
     --theme-logo2: #2196F3;

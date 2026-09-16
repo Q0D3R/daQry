@@ -27,10 +27,20 @@ document.addEventListener('DOMContentLoaded', function () {
           l.classList.remove('active');
         }
       });
-      if (typeof revealOnScroll === 'function') {
-        setTimeout(revealOnScroll, 50);
-      }
       window.scrollTo(0, 0);
+
+      // Immediately activate every reveal element in the section —
+      // they are all within viewport because we just scrolled to top.
+      targetSection.querySelectorAll('.reveal, .reveal-on-scroll').forEach(el => {
+        el.classList.add('active', 'is-visible');
+      });
+
+      // Second pass after two paint frames catches any below-fold items
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          if (typeof revealOnScroll === 'function') revealOnScroll();
+        });
+      });
     }
   };
 });
